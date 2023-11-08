@@ -152,6 +152,17 @@
         android:textStyle="bold"
         app:backgroundTint="#373737" />
 
+    <View
+        android:id="@+id/bookmark_button_shadow"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/bookmark_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="7dp"
+        android:background="#595959" />
     <Button
         android:id="@+id/bookmark_button"
         android:layout_width="40dp"
@@ -165,6 +176,18 @@
         android:background="@drawable/bookmarkadd_icon"
         app:backgroundTint="#697792"
         app:backgroundTintMode="add" />
+
+    <View
+        android:id="@+id/message_button_shadow"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/message_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="7dp"
+        android:background="#595959" />
 
     <Button
         android:id="@+id/message_button"
@@ -180,13 +203,25 @@
         app:backgroundTint="#697792"
         app:backgroundTintMode="add" />
 
+    <View
+        android:id="@+id/SHARE_button_shadow"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/share_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="7dp"
+        android:background="#595959" />
+
     <Button
         android:id="@+id/share_button"
-        android:layout_width="40dp"
+        android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view2"
         android:layout_marginTop="-44dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="12dp"
         android:layout_toStartOf="@+id/message_button"
@@ -273,5 +308,37 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:autoSizeMaxTextSize="19dp" />
+
+    <TextView
+        android:id="@+id/product_security_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_condition"
+        android:layout_alignStart="@+id/view3"
+        android:layout_alignEnd="@+id/view3"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="178dp"
+        android:fontFamily="serif"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:autoSizeMaxTextSize="19dp"
+        android:text="Security Deposit: 1 Valid ID" />
+
+    <TextView
+        android:id="@+id/product_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_security_info"
+        android:layout_marginStart="9dp"
+        android:layout_alignStart="@+id/view3"
+        android:layout_alignEnd="@id/view3"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="serif"
+        android:text="NON CANCELLATION & NON REFUNDABLE POLICY"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:autoSizeMaxTextSize="19dp" />
+
+
 
 </RelativeLayout>
