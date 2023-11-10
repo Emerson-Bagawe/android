@@ -55,11 +55,11 @@
             android:id="@+id/transaction_product"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_weight="10"
-            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="10"
+            android:background="#D9D9D9"
             android:padding="5dp"
-            android:background="#697793"
             app:srcCompat="@drawable/transaction_img" />
 
     </LinearLayout>
