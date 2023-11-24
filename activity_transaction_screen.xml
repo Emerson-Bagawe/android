@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transaction_screen">
+
+    <TextView
+        android:id="@+id/transactions_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Transactions"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_button"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F1F1F1"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FBFBFB"
+        app:backgroundTint="#373737"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/transactions_txt"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:rippleColor="#F4F4F4"
+        app:strokeColor="#F3F3F3" />
+
+    <LinearLayout
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/transactions_txt"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/transaction_product"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="10"
+            android:background="#D9D9D9"
+            android:padding="5dp"
+            app:srcCompat="@drawable/transaction_img" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
